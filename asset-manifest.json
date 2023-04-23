@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vanlife/static/css/main.52306bfd.css",
-    "main.js": "/vanlife/static/js/main.11a0cf4f.js",
-    "index.html": "/vanlife/index.html",
-    "main.52306bfd.css.map": "/vanlife/static/css/main.52306bfd.css.map",
-    "main.11a0cf4f.js.map": "/vanlife/static/js/main.11a0cf4f.js.map"
+    "main.css": "/chat-app/static/css/main.52306bfd.css",
+    "main.js": "/chat-app/static/js/main.9dd6cb27.js",
+    "index.html": "/chat-app/index.html",
+    "main.52306bfd.css.map": "/chat-app/static/css/main.52306bfd.css.map",
+    "main.9dd6cb27.js.map": "/chat-app/static/js/main.9dd6cb27.js.map"
   },
   "entrypoints": [
     "static/css/main.52306bfd.css",
-    "static/js/main.11a0cf4f.js"
+    "static/js/main.9dd6cb27.js"
   ]
 }
