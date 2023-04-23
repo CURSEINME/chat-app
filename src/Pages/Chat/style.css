@@ -1,0 +1,33 @@
+.chat-container {
+  background-color: #cebeed;
+
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+
+  height: calc(100vh - 70px);
+
+  margin: 0 auto;
+}
+.chat-form input{
+  font-size: 20px;
+
+  padding: 20px;
+  width: 100%;
+}
+
+.chat-top {
+  font-size: 25px;
+
+  height: 100%;
+
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 0 20px;
+
+}

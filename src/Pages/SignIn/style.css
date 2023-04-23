@@ -1,0 +1,64 @@
+.signIn-container {
+  color: #55375f;
+
+  flex-direction: column;
+  display: flex;
+
+  width: 500px;
+  max-height: 700px;
+
+  padding: 30px 30px;
+  margin: -250px 0 0 -250px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  border-radius: 20px;
+  background-color: #cebeed;
+  box-shadow: -1px 11px 18px 0px rgba(34, 60, 80, 0.46);
+}
+.signIn-title {
+  font-size: 35px;
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+.signIn-form {
+  gap: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+.signIn-form input {
+  color: black;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+
+  background-color:rgb(255, 255, 255)
+}
+.signIn-btn {
+  font-size: 22px;
+  color: white;
+
+  padding: 10px 20px;
+  margin-top: 30px;
+
+  background-color: #3e356a;
+  border-radius: 10px;
+
+  align-self: center;
+}
+.signIn-text {
+  margin-top: 40px;
+  font-size: 18px;
+}
+.signIn-error {
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  font-size: 25px;
+  color: rgb(255, 0, 0)
+}

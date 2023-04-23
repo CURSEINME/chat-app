@@ -1,23 +1,43 @@
-import logo from './logo.svg';
+import {
+  Route,
+  createRoutesFromElements,
+  RouterProvider,
+  createHashRouter,
+} from "react-router-dom";
 import './App.css';
+import "./reset.css"
+
+import SignIn, { action as signInAction } from "./Pages/SignIn";
+import SignUp, { action as signUpAction} from "./Pages/SignUp";
+import Chat, { action as chatAction} from "./Pages/Chat";
+import { requareAuth } from "./utils";
+
+
+const router = createHashRouter(createRoutesFromElements(
+  <Route path="/">
+    <Route
+      index
+      element={<Chat/>}
+      loader={() => requareAuth()}
+      action={chatAction}
+    />
+    <Route
+      path="signIn"
+      element={<SignIn/>}
+      action={signInAction}
+      />
+    <Route 
+      path="signUp"
+      element={<SignUp/>} 
+      action={signUpAction} 
+    />
+  </Route>
+))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+      <RouterProvider router={router} />
     </div>
   );
 }
