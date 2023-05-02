@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
 }
-.message-container.own {
-  align-items: flex-end;
-}
 .message-image {
   width: 50px;
   height: 50px;

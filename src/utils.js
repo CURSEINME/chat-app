@@ -3,9 +3,10 @@ import { auth } from "./firebase"
 
 export function requareAuth() {
 
-  const user = auth.currentUser
+  const loggedIn = localStorage.getItem("loggedIn")
+  console.log(loggedIn)
 
-  if (!user) {
+  if (!loggedIn) {
     return redirect("signIn")
   }
 

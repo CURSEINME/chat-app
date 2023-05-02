@@ -9,8 +9,14 @@ export default function AuthProvider({children}) {
 
   useEffect(() => {
     onAuthStateChanged(auth, user => {
-      // console.log(user)
-      setUser(user)
+      if (user) {
+        console.log("test")
+        localStorage.setItem("loggedIn", true)
+        
+        setUser(user)
+      } else {
+        localStorage.removeItem("loggedIn")
+      }
     })
   }, [])
 

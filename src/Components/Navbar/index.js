@@ -5,7 +5,6 @@ export default function Navbar() {
 
   async function signOut() {
     await userSignOut()
-    localStorage.removeItem("loggedIn")
     window.location.reload()
   }
 

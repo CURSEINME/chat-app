@@ -15,7 +15,7 @@ export async function action({request}) {
   const password = formData.get("password")
 
   try {
-    signIn({email, password})
+    await signIn({email, password})
 
     return redirect("/")
   } catch(err) {

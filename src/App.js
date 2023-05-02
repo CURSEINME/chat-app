@@ -24,11 +24,13 @@ const router = createHashRouter(createRoutesFromElements(
     <Route
       path="signIn"
       element={<SignIn/>}
+      // loader={() => requareAuth()}
       action={signInAction}
       />
     <Route 
       path="signUp"
-      element={<SignUp/>} 
+      element={<SignUp/>}
+      // loader={() => requareAuth()} 
       action={signUpAction} 
     />
   </Route>

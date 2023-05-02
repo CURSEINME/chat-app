@@ -1,13 +1,11 @@
 import { auth, db } from "./firebase";
 import { 
-  browserLocalPersistence,
   createUserWithEmailAndPassword,
-  setPersistence,
   signInWithEmailAndPassword,
   signOut,
   updateProfile
  } from "firebase/auth";
-import { Timestamp, addDoc, collection } from "firebase/firestore"
+import { addDoc, collection, serverTimestamp } from "firebase/firestore"
 
 export async function signIn({email, password}) {
   await signInWithEmailAndPassword(auth, email, password)
@@ -29,7 +27,7 @@ export async function sendMessage({message, photoURL, uid}) {
 
   await addDoc(messagesRef, {
     text: message,
-    createdAt: Timestamp.now(),
+    createdAt: serverTimestamp(),
     photoURL,
     uid,
   })
